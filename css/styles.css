@@ -5,6 +5,15 @@ Supported layouts as follows:
 Desktop                 (Large   992+ px  (md))
 Tablet: Apple iPad      (Medium  768 px   (sm))
 Mobile: Google Nexus 5  (X small 412 px   (xs))
+
+
+Horizontal breakpoints:
+
+1200
+992
+768
+324
+
 */
 
 header {
@@ -68,37 +77,62 @@ h1,h2,h3,h4 {
 }
 */
 
-    a {
-        font-size: 70%;
-    }
-
-@media screen and (max-width: 412px) {
-
-    .project > img {
-        display:block;
-       /* padding: 0;*/
-       /* height: 60px; */
-    }
-
-    a {
-        position: absolute;
-
-        font-size: 80%;
-        padding-top: 8px;
-    }
+.project_container {
+    background: #eff;
+    border-radius: 10px;
+    margin-bottom: 10px;
+    padding: 12px 0 10px 0;
 }
 
-.project h3 {
+.project_container:hover{
+    background: #7d97ad;
+}
+
+    a {
+        font-size: 95%;
+    }
+
+
+
+
+.project_name  {
     color: #2d3c49;
     text-transform: uppercase;
-
-/*   margin: 10px 0 5px 0; */
-margin-top: 0px;
+    margin-top: 0px;
+    font-size: 24px;
+    letter-spacing: 2px;
+    text-align: center;
 }
 
-.project_link {
-    min-height: 48px;
+
+.project_repo {
+    padding: 15px 15px 15px 15px;
     overflow: hidden;
     text-overflow: ellipsis;
-
+    font-size: 95%;
+    text-align: center;
 }
+
+
+@media screen and (max-width: 767px) {
+
+    .project_graphic {
+        display:block;
+    }
+
+    .project_name {
+      margin: 0;
+      text-align: left;
+    }
+
+    .project_repo {
+        color:green;
+        font-size: 80%;
+    }
+
+    h3 {
+    font-size: 150%;
+    }
+}
+
+
