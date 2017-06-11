@@ -1,15 +1,30 @@
+/*
+    Keeping a small space at top of page
+    for better visual look
+*/
 header {
     margin-top:10px;
 }
 
+/*
+    Selected a safe web font
+*/
 h1,h2,h3,h4,p {
     font-family:"Palatino Linotype", "Book Antiqua", Palatino, serif;
 }
 
+/*
+    Color requirement as per rubric
+*/
 h1 {
     color:#7d97ad;
 }
 
+/*
+    80px is small and ok to set as
+    an absolute size for all the
+    required viewport sizes
+*/
 .logo {
     height:80px;
 }
@@ -21,6 +36,10 @@ h1 {
     overflow:hidden;
 }
 
+/*
+    Owner upper-cased and colored
+    to match rubric requirement
+*/
 .owner_name {
     height:50px;
     white-space:nowrap;
@@ -30,6 +49,12 @@ h1 {
     letter-spacing:2px;
 }
 
+/*
+    Main purpose of this is to ensure the
+    skill text is pushed to bottom of cell
+    and to align vertically with the bottom
+    of the logo on the left side
+*/
 .owner_skill {
     height:30px;
     display:table-cell;
@@ -37,6 +62,10 @@ h1 {
     margin:0;
 }
 
+/*
+    Simple approximation of the divider
+    shown on the rubric
+*/
 .divider {
     width:100%;
     height:3px;
@@ -44,6 +73,10 @@ h1 {
     margin-top:20px;
 }
 
+/*
+    Splash image always stretches
+    full width of screen
+*/
 .splash_image img {
     width:100%;
     margin-top:20px;
@@ -53,6 +86,11 @@ h1 {
     margin-top:24px;
 }
 
+/*
+    Each collection of text items and picture
+    are within this container class so that
+    the background border can encapsulate them
+*/
 .project_container {
     background:#eff;
     border-radius:10px;
@@ -60,14 +98,19 @@ h1 {
     padding:12px 0 10px;
 }
 
+/*
+    Highlight the project on hover to indicate active
+    selection for improved readability and usability
+*/
 .project_container:hover {
     background:#7d97ad;
 }
 
-.project_graphic {
-    max-width:100%;
-}
-
+/*
+    Text transformed to Upper Case via CSS
+    since it's actually a required formatting
+    for the project titles
+*/
 .project_name {
     color:#2d3c49;
     text-transform:uppercase;
@@ -78,6 +121,10 @@ h1 {
     text-align:center;
 }
 
+/*
+    Only included Ellipsis formatting for special case
+    where viewport is even smaller than for a Nexus 5
+*/
 .project_repo {
     padding-top:10px;
     overflow:hidden;
