@@ -10,12 +10,6 @@ h1 {
     color:#7d97ad;
 }
 
-h2 {
-    color:#2d3c49;
-    text-transform:uppercase;
-    letter-spacing:2px;
-}
-
 .logo {
     height:80px;
 }
@@ -31,6 +25,9 @@ h2 {
     height:50px;
     white-space:nowrap;
     margin:0;
+    color:#2d3c49;
+    text-transform:uppercase;
+    letter-spacing:2px;
 }
 
 .owner_skill {
@@ -75,6 +72,7 @@ h2 {
     color:#2d3c49;
     text-transform:uppercase;
     margin-top:0;
+    padding-top:5%;
     font-size:24px;
     letter-spacing:2px;
     text-align:center;
@@ -88,10 +86,13 @@ h2 {
     text-align:center;
 }
 
+/*
+    For everything smaller that iPad, project name appears to
+    right of project picture and looks better if left aligned
+ */
 @media screen and (max-width: 767px) {
     .project_name {
         text-align:left;
-        padding-top:5%;
         margin:0;
     }
 }
