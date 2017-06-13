@@ -46,11 +46,11 @@ h1 {
 */
 .owner_name {
     height: 50px;
-    white-space: nowrap;
     margin: 0;
     color: #2d3c49;
     text-transform: uppercase;
     letter-spacing: 2px;
+    text-align: right;
 }
 
 /*
@@ -59,11 +59,15 @@ h1 {
     and to align vertically with the bottom
     of the logo on the left side
 */
+.bottom_align {
+}
+
 .owner_skill {
     height: 30px;
+    margin: 0;
+    color: #2d3c49;
     display: table-cell;
     vertical-align: bottom;
-    margin: 0;
 }
 
 /*
@@ -86,20 +90,8 @@ h1 {
     margin-top: 20px;
 }
 
-#projects {
+.projects {
     margin-top: 24px;
-}
-
-/*
-    Each collection of text items and picture
-    are within this container class so that
-    the background border can encapsulate them
-*/
-.project_container {
-    background: #eff;
-    border-radius: 10px;
-    margin-bottom: 10px;
-    padding: 12px 0 10px;
 }
 
 /*
@@ -107,7 +99,9 @@ h1 {
     selection for improved readability and usability
 */
 .project_container:hover {
-    background: #7d97ad;
+   /* background: #7d97ad;*/
+
+    filter: drop-shadow(2px 2px 8px #bbb);
 }
 
 /*
