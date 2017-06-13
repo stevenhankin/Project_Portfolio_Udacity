@@ -3,21 +3,25 @@
     for better visual look
 */
 header {
-    margin-top:10px;
+    margin-top: 10px;
 }
 
 /*
     Selected a safe web font
 */
-h1,h2,h3,h4,p {
-    font-family:"Palatino Linotype", "Book Antiqua", Palatino, serif;
+h1,
+h2,
+h3,
+h4,
+p {
+    font-family: "Palatino Linotype", "Book Antiqua", Palatino, serif;
 }
 
 /*
     Color requirement as per rubric
 */
 h1 {
-    color:#7d97ad;
+    color: #7d97ad;
 }
 
 /*
@@ -26,14 +30,14 @@ h1 {
     required viewport sizes
 */
 .logo {
-    height:80px;
+    height: 80px;
 }
 
 .header_text {
-    color:#2d3c49;
-    float:right;
-    text-align:right;
-    overflow:hidden;
+    color: #2d3c49;
+    float: right;
+    text-align: right;
+    overflow: hidden;
 }
 
 /*
@@ -41,12 +45,12 @@ h1 {
     to match rubric requirement
 */
 .owner_name {
-    height:50px;
-    white-space:nowrap;
-    margin:0;
-    color:#2d3c49;
-    text-transform:uppercase;
-    letter-spacing:2px;
+    height: 50px;
+    white-space: nowrap;
+    margin: 0;
+    color: #2d3c49;
+    text-transform: uppercase;
+    letter-spacing: 2px;
 }
 
 /*
@@ -56,10 +60,10 @@ h1 {
     of the logo on the left side
 */
 .owner_skill {
-    height:30px;
-    display:table-cell;
-    vertical-align:bottom;
-    margin:0;
+    height: 30px;
+    display: table-cell;
+    vertical-align: bottom;
+    margin: 0;
 }
 
 /*
@@ -67,10 +71,10 @@ h1 {
     shown on the rubric
 */
 .divider {
-    width:100%;
-    height:3px;
-    background-color:#7d97ad;
-    margin-top:20px;
+    width: 100%;
+    height: 3px;
+    background-color: #7d97ad;
+    margin-top: 20px;
 }
 
 /*
@@ -78,12 +82,12 @@ h1 {
     full width of screen
 */
 .splash_image img {
-    width:100%;
-    margin-top:20px;
+    width: 100%;
+    margin-top: 20px;
 }
 
 #projects {
-    margin-top:24px;
+    margin-top: 24px;
 }
 
 /*
@@ -92,10 +96,10 @@ h1 {
     the background border can encapsulate them
 */
 .project_container {
-    background:#eff;
-    border-radius:10px;
-    margin-bottom:10px;
-    padding:12px 0 10px;
+    background: #eff;
+    border-radius: 10px;
+    margin-bottom: 10px;
+    padding: 12px 0 10px;
 }
 
 /*
@@ -103,7 +107,7 @@ h1 {
     selection for improved readability and usability
 */
 .project_container:hover {
-    background:#7d97ad;
+    background: #7d97ad;
 }
 
 /*
@@ -120,13 +124,13 @@ h1 {
     for the project titles
 */
 .project_name {
-    color:#2d3c49;
-    text-transform:uppercase;
-    margin-top:0;
-    padding-top:5%;
-    font-size:24px;
-    letter-spacing:2px;
-    text-align:center;
+    color: #2d3c49;
+    text-transform: uppercase;
+    margin-top: 0;
+    padding-top: 5%;
+    font-size: 24px;
+    letter-spacing: 2px;
+    text-align: center;
 }
 
 /*
@@ -134,11 +138,11 @@ h1 {
     where viewport is even smaller than for a Nexus 5
 */
 .project_repo {
-    padding-top:10px;
-    overflow:hidden;
-    text-overflow:ellipsis;
-    font-size:85%;
-    text-align:center;
+    padding-top: 10px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    font-size: 85%;
+    text-align: center;
 }
 
 /*
@@ -147,7 +151,7 @@ h1 {
  */
 @media screen and (max-width: 767px) {
     .project_name {
-        text-align:left;
-        margin:0;
+        text-align: left;
+        margin: 0;
     }
 }
