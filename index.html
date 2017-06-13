@@ -7,6 +7,10 @@
       <!-- Using Bootstrap to provide a responsive grid system -->
       <link rel="stylesheet" href="css/bootstrap.min.css">
       <link rel="stylesheet" href="css/styles.css">
+          <!-- Good practice to put script in Header with ASYNC option
+          as per https://stackoverflow.com/questions/436411/where-should-i-put-script-tags-in-html-markup
+           -->
+      <script src="js/bootstrap.min.js" async></script>
    </head>
    <body>
 
@@ -157,8 +161,5 @@
             </div>
          </div>
       </div>
-   <!-- Good practice to put JS at the end of body section
-     so DOM is ready when scripts load -->
-      <script src="js/bootstrap.min.js"></script>
    </body>
 </html>

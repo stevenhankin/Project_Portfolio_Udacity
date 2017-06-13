@@ -107,6 +107,14 @@ h1 {
 }
 
 /*
+    Fill the image to the size of
+    the containing bootstrap cell
+*/
+.project_graphic {
+    min-width: 100%;
+}
+
+/*
     Text transformed to Upper Case via CSS
     since it's actually a required formatting
     for the project titles
