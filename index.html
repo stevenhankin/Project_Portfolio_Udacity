@@ -15,103 +15,122 @@
    -->
       <div class="container">
 
-         <header>
-             <!-- Clearfix needed here since using floats to
-              align logo and name on opposite sides of window -->
-            <div class="clearfix" >
-               <img class="logo" src="img/cat_logo_73w.png" alt="Site logo">
-               <div class="header_text clearfix">
-                  <h2 class="owner_name">Steve Hankin</h2>
-                  <h3 class="owner_skill">Full Stack Developer</h3>
-               </div>
+         <div class="row">
+            <div class="col-md-12">
+               <header>
+                   <!-- Clearfix needed here since using floats to
+                    align logo and name on opposite sides of window -->
+                  <div class="clearfix" >
+                     <img class="logo" src="img/cat_logo_73w.png" alt="Site logo">
+                     <div class="header_text clearfix">
+                        <h2 class="owner_name">Steve Hankin</h2>
+                        <h3 class="owner_skill">Full Stack Developer</h3>
+                     </div>
+                  </div>
+               </header>
             </div>
-         </header>
-
-         <div class="divider"></div>
-
-         <div class="splash_image">
-            <img src="img/splash_image_2560w.png"
-               srcset="img/splash_image_720w.png 720w,
-               img/splash_image_2560w.png 2560w" sizes="90vw" alt="Infographic splash picture">
          </div>
 
-         <section id="projects">
+         <!-- Full width dividing line as per spec -->
+         <div class="row">
+            <div class="col-md-12">
+               <div class="divider"></div>
+            </div>
+         </div>
 
-            <h1>Featured Work</h1>
-
-            <div class="row">
-
-               <!-- These 'project' items could be generated
-                  by a mid-layer, if supporting variable number
-                  of projects
-                  -->
-               <div class="project col-xs-12 col-sm-6 col-md-4">
-                  <!-- Easier for user to select if the whole section is an href
-                     rather than just the project url
-                     -->
-                  <a href="https://github.com/stevenhankin/ud036_StarterCode/">
-                     <!-- Using another container within the project cell
-                        so that background effects can be applied on hover
-                        without spilling outside of the grid cell
-                         -->
-                     <div class="project_container clearfix">
-                        <img class="project_graphic col-xs-5 col-sm-12"
-                           src="img/movie_600w.png"
-                           srcset="img/movie_600w.png 600w, img/movie_300w.png 300w"
-                           sizes="(max-width:767px) 36vw , (max-width:991px) 32vw , 18vw"
-                           alt="Film reel">
-                        <p class="project_name col-xs-7 col-sm-12">Movie Trailers</p>
-                        <p class="project_repo col-xs-12 " >https://github.com/stevenhankin/ud036_StarterCode/</p>
-                     </div>
-                  </a>
-               </div>
-
-               <div class="project col-xs-12 col-sm-6 col-md-4">
-                  <!-- TODO : Assign to project url once created -->
-                  <a href="https://github.com/stevenhankin/tbd/">
-                     <div class="project_container clearfix">
-                        <img class="col-xs-5 col-sm-12"
-                           src="img/magnifying_glass_600w.png"
-                           srcset="img/magnifying_glass_600w.png 600w, img/magnifying_glass_300w.png 300w"
-                           sizes="(max-width:767px) 36vw , (max-width:991px) 32vw , 18vw"
-                           alt="Magnifying glass">
-                        <p class="project_name col-xs-7 col-sm-12" >Log Analysis</p>
-                        <p class="project_repo col-xs-12" >https://github.com/stevenhankin/tbd/</p>
-                     </div>
-                  </a>
-               </div>
-
-               <div class="project col-xs-12 col-sm-6 col-md-4">
-                  <!-- TODO : Assign to project url once created -->
-                  <a href="https://github.com/stevenhankin/tbd/">
-                     <div class="project_container clearfix">
-                        <img class="col-xs-5 col-sm-12"
-                           src="img/item_catalog_600w.png"
-                           srcset="img/item_catalog_600w.png 600w, img/item_catalog_300w.png 300w"
-                           sizes="(max-width:767px) 36vw , (max-width:991px) 32vw , 18vw"
-                           alt="Book">
-                        <p class="project_name col-xs-7 col-sm-12">Item Catalog</p>
-                        <p class="project_repo col-xs-12" >https://github.com/stevenhankin/tbd/</p>
-                     </div>
-                  </a>
-               </div>
-
-               <div class="project col-xs-12 col-sm-6 col-md-4">
-                  <!-- TODO : Assign to project url once created -->
-                  <a href="https://github.com/stevenhankin/tbd/">
-                     <div class="project_container clearfix">
-                        <img class="col-xs-5 col-sm-12"
-                           src="img/neighbourhood_map_600w.png"
-                           srcset="img/neighbourhood_map_600w.png 600w, img/neighbourhood_map_300w.png 300w"
-                           sizes="(max-width:767px) 36vw , (max-width:991px) 32vw , 18vw"
-                           alt="Map of a rural area">
-                        <p class="project_name col-xs-7 col-sm-12">Local Map</p>
-                        <p class="project_repo col-xs-12">https://github.com/stevenhankin/tbd/</p>
-                     </div>
-                  </a>
+         <!-- Full width splash image as per spec -->
+         <div class="row">
+            <div class="col-md-12">
+               <div class="splash_image">
+                  <img src="img/splash_image_2560w.png"
+                     srcset="img/splash_image_720w.png 720w,
+                     img/splash_image_2560w.png 2560w" sizes="90vw" alt="Infographic splash picture">
                </div>
             </div>
-         </section>
+         </div>
+
+         <!-- Single cell that will contain another grid for the project layouts -->
+         <div class="row">
+            <div class="col-md-12">
+               <section id="projects">
+
+                  <h1>Featured Work</h1>
+
+                  <div class="row">
+
+                     <!-- These 'project' items could be generated
+                        by a mid-layer, if supporting variable number
+                        of projects
+                        -->
+                     <div class="project col-xs-12 col-sm-6 col-md-4">
+                        <!-- Easier for user to select if the whole section is an href
+                           rather than just the project url
+                           -->
+                        <a href="https://github.com/stevenhankin/ud036_StarterCode/">
+                           <!-- Using another container within the project cell
+                              so that background effects can be applied on hover
+                              without spilling outside of the grid cell
+                               -->
+                           <div class="project_container clearfix">
+                              <img class="project_graphic col-xs-5 col-sm-12"
+                                 src="img/movie_600w.png"
+                                 srcset="img/movie_600w.png 600w, img/movie_300w.png 300w"
+                                 sizes="(max-width:767px) 36vw , (max-width:991px) 32vw , 18vw"
+                                 alt="Film reel">
+                              <p class="project_name col-xs-7 col-sm-12">Movie Trailers</p>
+                              <p class="project_repo col-xs-12 " >https://github.com/stevenhankin/ud036_StarterCode/</p>
+                           </div>
+                        </a>
+                     </div>
+
+                     <div class="project col-xs-12 col-sm-6 col-md-4">
+                        <!-- TODO : Assign to project url once created -->
+                        <a href="https://github.com/stevenhankin/tbd/">
+                           <div class="project_container clearfix">
+                              <img class="col-xs-5 col-sm-12"
+                                 src="img/magnifying_glass_600w.png"
+                                 srcset="img/magnifying_glass_600w.png 600w, img/magnifying_glass_300w.png 300w"
+                                 sizes="(max-width:767px) 36vw , (max-width:991px) 32vw , 18vw"
+                                 alt="Magnifying glass">
+                              <p class="project_name col-xs-7 col-sm-12" >Log Analysis</p>
+                              <p class="project_repo col-xs-12" >https://github.com/stevenhankin/tbd/</p>
+                           </div>
+                        </a>
+                     </div>
+
+                     <div class="project col-xs-12 col-sm-6 col-md-4">
+                        <!-- TODO : Assign to project url once created -->
+                        <a href="https://github.com/stevenhankin/tbd/">
+                           <div class="project_container clearfix">
+                              <img class="col-xs-5 col-sm-12"
+                                 src="img/item_catalog_600w.png"
+                                 srcset="img/item_catalog_600w.png 600w, img/item_catalog_300w.png 300w"
+                                 sizes="(max-width:767px) 36vw , (max-width:991px) 32vw , 18vw"
+                                 alt="Book">
+                              <p class="project_name col-xs-7 col-sm-12">Item Catalog</p>
+                              <p class="project_repo col-xs-12" >https://github.com/stevenhankin/tbd/</p>
+                           </div>
+                        </a>
+                     </div>
+
+                     <div class="project col-xs-12 col-sm-6 col-md-4">
+                        <!-- TODO : Assign to project url once created -->
+                        <a href="https://github.com/stevenhankin/tbd/">
+                           <div class="project_container clearfix">
+                              <img class="col-xs-5 col-sm-12"
+                                 src="img/neighbourhood_map_600w.png"
+                                 srcset="img/neighbourhood_map_600w.png 600w, img/neighbourhood_map_300w.png 300w"
+                                 sizes="(max-width:767px) 36vw , (max-width:991px) 32vw , 18vw"
+                                 alt="Map of a rural area">
+                              <p class="project_name col-xs-7 col-sm-12">Local Map</p>
+                              <p class="project_repo col-xs-12">https://github.com/stevenhankin/tbd/</p>
+                           </div>
+                        </a>
+                     </div>
+                  </div>
+               </section>
+            </div>
+         </div>
       </div>
    <!-- Good practice to put JS at the end of body section
      so DOM is ready when scripts load -->
